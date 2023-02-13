@@ -1,0 +1,123 @@
+.content {
+  width: 250px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+}
+
+.content:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.defaultButton {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.contentImage {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.contentImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.contentImage .like {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.contentImage .like {
+  background-color: rgba(228, 228, 228, 0.5);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: 0.3s all ease;
+}
+
+.contentImage .like:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.contentImage .addProduct {
+  position: absolute;
+  left: 15px;
+  bottom: -16px;
+  background-color: var(--blue-600);
+  color: var(--white-1000);
+  padding: 5px 20px;
+  border-radius: 40px;
+  transition: 0.3s all ease;
+}
+
+.contentImage .addProduct:hover {
+  background-color: var(--blue-550);
+  transform: scale(1.05);
+}
+
+.contentStars {
+  display: flex;
+  align-items: center;
+}
+
+.contentStars span {
+  margin-right: 5px;
+  color: var(--gray-600);
+  font-size: 16px;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+}
+
+.currency {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--green-300);
+}
+
+.currency span {
+  margin-left: 10px;
+  text-decoration: line-through;
+  font-weight: 400;
+  color: var(--gray-800);
+  font-size: 16px;
+}
+
+.title {
+  font-size: 16px;
+  overflow: hidden;
+  color: var(--black-300);
+  font-weight: 600;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.description {
+  font-size: 14px;
+  height: 60px;
+  overflow: hidden;
+  color: var(--gray-800);
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
